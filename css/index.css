@@ -36,14 +36,45 @@
     width: 50%;
 }
 
+#first-block {
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+#first-block .left {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
 .left img {
-    width: 100%
+    width: 80%;
+    align-self: center;
 }
 
 .right {
     float: right;
     width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4px;
 }
+
+#right {
+    margin-top: 0;
+}
+
+.about-text {
+    font-size: 2.336vw;
+    letter-spacing: -0.5.474vw;
+    line-height: 2.482vw;
+    margin-bottom: 24px;
+}
+
 
 h2 {
     font-size: 4.412vw;
@@ -56,8 +87,9 @@ h2 {
 h3 {
     font-size: 3.235vw;
     line-height: 1;
-    letter-spacing: -1.0.147vw;
+    letter-spacing: -0.09vw;
     white-space: pre-line;
+    
 }
 
 h5 {
@@ -68,8 +100,9 @@ h5 {
 }
 
 ul {
-    font-size: 1.691vw;
-    line-height: 1.04;
+    font-size: 1.533vw;
+    letter-spacing: -0.0.219vw;
+    line-height: 1.752vw;
     text-transform: uppercase;
 }
 
@@ -86,17 +119,14 @@ a {
 }
 
 p {
-    font-size: 1.691vw;
-    line-height: 1.04;
+    font-size: 1.533vw;
+    letter-spacing: -0.0.219vw;
+    line-height: 1.752vw;
     white-space: pre-line;
 }
 
 section:not(:last-of-type) {
-    margin: 66px 0;
-}
-
-header {
-    margin: 30px 0 66px 0;
+    margin: 4.818vw 0;
 }
 
 header .right .div-group:first-of-type {
@@ -107,25 +137,32 @@ header .right .div-group:last-of-type {
     margin-top: 246px;
 }
 
-#Structure .div-group:nth-of-type(2),
-#Structure .div-group:nth-of-type(3) {
-    margin: 36px 0;
+#Structure .div-group {
+    margin-bottom: 2.628vw;
+}
+
+#Structure .div-group:last-child {
+    margin-bottom: 0;
 }
 
 #Format .div-group:nth-of-type(2) {
-    margin: 24px 0;
+    margin: 1.752vw 0;
 }
 
 #Education p:last-of-type {
-    margin: 12px 0 36px 0;
+    margin: 0 0 1.752vw 0;
 }
 
 #Experience .div-group:nth-of-type(2) {
-    margin: 24px 0;
+    margin: 1.752vw 0;
+}
+
+#Qualification {
+    margin-bottom: 1.752vw;
 }
 
 #Qualification .div-group:nth-of-type(2) {
-    margin-top: 24px;
+    margin-top: 1.752vw;
 }
 
 #FAQ .div-group:nth-of-type(2) {
@@ -134,10 +171,25 @@ header .right .div-group:last-of-type {
 
 
 @media all and (max-width: 768px) {
+    
+    #first-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 18px;
+        text-align: center;
+    }
 
     .container {
-        margin: 0 12px;
+        margin: 0 18px;
         text-align: center;
+    }
+
+    .about-text {
+        font-size: 7.895vw;
+        letter-spacing: -0.159vw;
+        line-height: 7.895vw;
+        margin: 12.228vw 0;
     }
 
     .left,
@@ -148,52 +200,70 @@ header .right .div-group:last-of-type {
     }
 
     h2 {
-        font-size: 11.892vw;
-        letter-spacing: 1px;
-        margin-bottom: 30px;
+        font-size: 11.579vw;
+        letter-spacing: -0.526vw;
+        line-height: 11.579vw;
+        margin-bottom: 6.316vw;
     }
 
     h3 {
-        font-size: 8.108vw;
-        letter-spacing: .5px;
-        line-height: 1.1;
+        font-size: 7.895vw;
+        letter-spacing: -0.159vw;
+        line-height: 7.895vw;
         white-space: normal;
     }
 
+    .contact {
+        margin-top: 24px;
+    }
+
     h5 {
-        font-size: 3.243vw;
-        letter-spacing: 1px;
-        line-height: 1.2;
+        font-size: 3.158vw;
+        line-height: 3.158vw;
     }
 
     ul {
-        font-size: 4.595vw;
-        margin-top: 20px;
+        font-size: 4.474vw;
+        line-height: 4.737vw;
+        margin-bottom: 2.628vw;
     }
 
     li {
         white-space: normal;
-        line-height: 1.2;
+        line-height: 4.737vw;
     }
 
     p {
-        font-size: 4.595vw;
+        font-size: 4.474vw;
+        line-height: 4.737vw;
     }
 
     img {
         width: 100%;
     }
 
-    section:not(:last-of-type) {
-        margin: 100px 0;
-    }
-
-    header .right .div-group:first-of-type {
-        margin-top: 70px;
+    #Format .div-group:nth-of-type(2) {
+        margin: 5.256vw 0;
     }
     
-    header .right .div-group:last-of-type {
-        margin-top: 65px;
+    #Education p:last-of-type {
+        margin: 0 0 5.256vw 0;
+    }
+    
+    #Experience .div-group:nth-of-type(2) {
+        margin: 5.256vw 0;
+    }
+    
+    #Qualification {
+        margin-bottom: 5.256vw;
+    }
+    
+    #Qualification .div-group:nth-of-type(2) {
+        margin-top: 5.256vw;
+    }
+
+    section:not(:last-of-type) {
+        margin: 12.973vw 0;
     }
 
 }
